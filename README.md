@@ -182,35 +182,6 @@ Frontend runs at `http://localhost:5173`
 
 ---
 
-## Deployment
-
-The backend serves the frontend build in production — only one service to deploy.
-
-### Build
-
-```bash
-# From the repo root
-npm run build    # builds frontend/dist
-```
-
-### Environment variables for production
-
-Set these on your hosting platform (Render, Railway, etc.):
-
-```env
-NODE_ENV=production
-MONGO_URI=mongodb+srv://<user>:<pass>@cluster.mongodb.net/taskforge
-JWT_SECRET=your_long_random_secret
-PORT=5000
-VITE_API_URL=/api
-```
-
-### Generate a secure JWT secret
-
-```bash
-node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
-```
-
 ---
 
 ## Role Permissions
