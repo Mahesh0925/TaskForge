@@ -1,0 +1,12 @@
+# Most rules are handled by the root .gitignore.
+# This file adds frontend-specific overrides.
+
+# Vite preview / local build artifacts
+dist-ssr/
+*.local
+
+# Environment files (root rule covers .env, this ensures .env.production too)
+.env.production
+
+# Keep the example template
+!.env.example

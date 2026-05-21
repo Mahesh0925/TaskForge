@@ -1,0 +1,15 @@
+{
+  "name": "taskforge",
+  "version": "1.0.0",
+  "description": "TaskForge – full-stack project & task management app",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
