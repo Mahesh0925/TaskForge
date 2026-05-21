@@ -205,21 +205,6 @@ PORT=5000
 VITE_API_URL=/api
 ```
 
-### Deploy on Render
-
-1. Push the repo to GitHub
-2. Create a **Web Service** on [render.com](https://render.com)
-3. Connect your GitHub repo
-4. Set the following:
-
-| Setting | Value |
-|---|---|
-| Build Command | `npm run build && cd backend && npm install` |
-| Start Command | `npm start` |
-| Environment | Add the variables above |
-
-Render will give you a URL like `https://taskforge.onrender.com` — both frontend and API served from the same domain.
-
 ### Generate a secure JWT secret
 
 ```bash
