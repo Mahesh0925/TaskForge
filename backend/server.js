@@ -40,7 +40,8 @@ if (process.env.NODE_ENV === 'production') {
   const frontendPath = path.join(__dirname, '../frontend/dist');
   app.use(express.static(frontendPath));
   // All non-API routes → React app
-  app.get('*', (req, res) => {
+  // ✅ Express 5 wildcard syntax
+  app.get('/{*path}', (req, res) => {
     res.sendFile(path.join(frontendPath, 'index.html'));
   });
 }
